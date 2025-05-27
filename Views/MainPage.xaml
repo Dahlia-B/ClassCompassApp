@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClassCompassApp.Views.MainPage"
+             Title="ClassCompassApp">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="ClassCompass logo"
+                HeightRequest="100"
+                HorizontalOptions="Center" />
+
+            <Label 
+                Text="Welcome to ClassCompass"
+                FontSize="32"
+                HorizontalOptions="Center"
+                TextColor="{StaticResource Primary}" />
+
+            <Label 
+                Text="Your complete school management solution"
+                FontSize="18"
+                HorizontalOptions="Center"
+                TextColor="{StaticResource Secondary}" />
+
+            <Button 
+                x:Name="SchoolSignUpBtn"
+                Text="School Sign-Up"
+                FontAttributes="Bold"
+                BackgroundColor="{StaticResource Primary}"
+                TextColor="White"
+                Clicked="OnSchoolSignUpClicked" />
+
+            <Button 
+                x:Name="TeacherSignUpBtn"
+                Text="Teacher Sign-Up"
+                FontAttributes="Bold"
+                BackgroundColor="{StaticResource Secondary}"
+                TextColor="White"
+                Clicked="OnTeacherSignUpClicked" />
+
+            <Button 
+                x:Name="StudentSignUpBtn"
+                Text="Student Sign-Up"
+                FontAttributes="Bold"
+                BackgroundColor="{StaticResource Tertiary}"
+                TextColor="White"
+                Clicked="OnStudentSignUpClicked" />
+
+            <Button 
+                x:Name="LoginBtn"
+                Text="Login"
+                FontAttributes="Bold"
+                BackgroundColor="DarkBlue"
+                TextColor="White"
+                Clicked="OnLoginClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
