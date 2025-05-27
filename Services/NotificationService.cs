@@ -1,14 +1,30 @@
-﻿using System.Threading.Tasks;
+using System.Text;
 
-namespace ClassCompassApp.Services
+public class NotificationService
 {
-    public static class NotificationService
+    private readonly HttpClient _httpClient;
+
+    public NotificationService()
     {
-        public static async Task SendClassReminder(string userId)
+        _httpClient = new HttpClient();
+    }
+
+    public async Task SendClassReminder(string userId)
+    {
+        var notification = new
         {
-            // Replace with actual Firebase call logic
-            await Task.Delay(500); // Simulate network delay
-            System.Diagnostics.Debug.WriteLine($"Class reminder sent to {userId}");
-        }
+            to = userId,
+            notification = new
+            {
+                title = "Class Reminder",
+                body = "Your class starts in 5 minutes!"
+            }
+        };
+
+        var jsonContent = JsonConvert.SerializeObject(notification);
+        var response = await _httpClient.PostAsync("https://fcm.googleapis.com/fcm/send",
+            new StringContent(jsonContent, Encoding.UTF8, "application/json"));
+
+        Console.WriteLine($"Notification sent: {response.StatusCode}");
     }
 }

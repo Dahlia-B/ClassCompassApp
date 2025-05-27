@@ -1,0 +1,7 @@
+C:\ClassCompassProject\ClassCompassAPI\obj\Debug\net8.0\ClassCompassAPI.csproj.AssemblyReference.cache
+C:\ClassCompassProject\ClassCompassAPI\obj\Debug\net8.0\ClassCompassAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\ClassCompassProject\ClassCompassAPI\obj\Debug\net8.0\ClassCompassAPI.AssemblyInfoInputs.cache
+C:\ClassCompassProject\ClassCompassAPI\obj\Debug\net8.0\ClassCompassAPI.AssemblyInfo.cs
+C:\ClassCompassProject\ClassCompassAPI\obj\Debug\net8.0\ClassCompassAPI.csproj.CoreCompileInputs.cache
+C:\ClassCompassProject\ClassCompassAPI\obj\Debug\net8.0\ClassCompassAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\ClassCompassProject\ClassCompassAPI\obj\Debug\net8.0\ClassCompassAPI.MvcApplicationPartsAssemblyInfo.cache
