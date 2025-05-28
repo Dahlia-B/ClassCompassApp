@@ -1,14 +1,12 @@
-﻿using ClassCompassAPI.Models;
+﻿using System.Threading.Tasks;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using ClassCompassAPI.Data.Models;
 
 namespace ClassCompassAPI.Interfaces
 {
     public interface IHomeworkService
     {
-        Task<IEnumerable<HomeworkAssignment>> GetAssignmentsAsync();
-        Task<HomeworkAssignment> CreateAssignmentAsync(HomeworkAssignment assignment);
-        Task<HomeworkSubmission> SubmitHomeworkAsync(HomeworkSubmission submission);
-        Task<HomeworkGrade> GradeHomeworkAsync(HomeworkGrade grade);
+        Task AssignHomework(HomeworkAssignment assignment);
+        Task GradeHomework(HomeworkGrade grade);
     }
 }

@@ -1,5 +1,4 @@
 using ClassCompassApp.Data;
-using ClassCompassApp.Models;
 
 public class AttendanceApi
 {

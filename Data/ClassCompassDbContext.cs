@@ -1,4 +1,4 @@
-﻿using ClassCompassAPI.Models; // Instead of ClassCompassApp
+﻿using ClassCompassAPI.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClassCompassAPI.Data

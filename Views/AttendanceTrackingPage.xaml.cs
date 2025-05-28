@@ -1,7 +1,5 @@
-using ClassCompassApp.Models;
-using ClassCompassApp.Services;
 using ClassCompassApp.Data;
-
+using ClassCompassApp.Services;
 namespace ClassCompassApp.Views;
 
 public partial class AttendanceTrackingPage : ContentPage
@@ -22,6 +20,12 @@ public partial class AttendanceTrackingPage : ContentPage
             return;
         }
 
+        if (!int.TryParse(StudentIdEntry.Text, out int studentId))
+        {
+            await DisplayAlert("Error", "Student ID must be a valid number", "OK");
+            return;
+        }
+
         if (StatusPicker.SelectedItem == null)
         {
             await DisplayAlert("Error", "Please select a status", "OK");
@@ -31,8 +35,9 @@ public partial class AttendanceTrackingPage : ContentPage
         var record = new Attendance
         {
             AttendanceId = Guid.NewGuid().ToString(),
-            StudentId = StudentIdEntry.Text,
-            Status = StatusPicker.SelectedItem.ToString()
+            StudentId = studentId,
+            Status = StatusPicker.SelectedItem?.ToString() ?? string.Empty,
+            Date = DateTime.Now
         };
 
         try

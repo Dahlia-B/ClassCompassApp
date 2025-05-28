@@ -1,6 +1,6 @@
 ﻿using ClassCompassApp.Data;
 using ClassCompassApp.Views;
-using ClassCompassApp.Services; // <-- Add this if your API services are in Services namespace
+using ClassCompassApp.Services;
 using CommunityToolkit.Maui;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -12,7 +12,6 @@ namespace ClassCompassApp
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
-
             builder
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
@@ -22,14 +21,20 @@ namespace ClassCompassApp
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-            // Register SQLite EF Core DbContext (Scoped lifetime)
-            builder.Services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlite("Data Source=classcompass.db"));
+            // Get the proper database path for the device
+            var databasePath = Path.Combine(FileSystem.AppDataDirectory, "classcompass.db");
 
-            // Register API services for DI (Scoped or Transient as appropriate)
+            // Register SQLite EF Core DbContext with proper path
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlite($"Data Source={databasePath}"));
+
+            // Register API services for DI
             builder.Services.AddScoped<AttendanceApi>();
             builder.Services.AddScoped<GradesApi>();
             builder.Services.AddScoped<HomeworkApi>();
+
+            // Register user session service as singleton
+            builder.Services.AddSingleton<UserSessionService>();
 
             // Register pages for dependency injection
             builder.Services.AddTransient<TeacherLoginPage>();
@@ -46,7 +51,6 @@ namespace ClassCompassApp
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
-
             return builder.Build();
         }
     }

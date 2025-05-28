@@ -1,14 +1,5 @@
-namespace ClassCompassAPI.Models
+namespace ClassCompassAPI.Data.Models
 {
-    public class HomeworkSubmission
-    {
-        public int Id { get; set; }
-        public int AssignmentId { get; set; }
-        public int StudentId { get; set; }
-        public string Content { get; set; } = string.Empty;
-        public DateTime SubmittedAt { get; set; }
-        public string? Grade { get; set; }
-    }
 
     public class Submission
     {

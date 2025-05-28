@@ -1,13 +1,12 @@
-using ClassCompassApp.Models;
+using ClassCompassApp.Models; // Make sure this is the correct namespace
 using ClassCompassApp.Services;
-using ClassCompassApp.Data;
 using Microsoft.Maui.Controls;
 
 namespace ClassCompassApp.Views
 {
     public partial class HomeworkSubmissionPage : ContentPage
     {
-        private string SelectedFileURL = "https://example.com/dummyfile.pdf";
+        private string SelectedFileURL = string.Empty;
         private readonly HomeworkApi _homeworkApi;
 
         public HomeworkSubmissionPage(HomeworkApi homeworkApi)
@@ -18,25 +17,46 @@ namespace ClassCompassApp.Views
 
         private async void OnChooseFileClicked(object sender, EventArgs e)
         {
-            // TODO: Use FilePicker to get URL
+            // TODO: Implement actual file picker here, for now mock URL:
             SelectedFileURL = "https://example.com/dummyfile.pdf";
             await DisplayAlert("File Selected", "Mock file selected!", "OK");
         }
 
         private async void OnSubmitClicked(object sender, EventArgs e)
         {
-            // Assuming App.CurrentUser is a string user ID
-            var currentUserId = App.CurrentUser;
-            if (string.IsNullOrWhiteSpace(currentUserId))
+            // Validate user logged in
+            var currentUser = App.CurrentUser as User;  // Cast App.CurrentUser to User class
+            if (currentUser == null)
             {
                 await DisplayAlert("Error", "No current user found.", "OK");
                 return;
             }
 
+            var currentUserId = currentUser.UserId;  // Access UserId property of the User class
+
+            if (string.IsNullOrWhiteSpace(currentUserId))
+            {
+                await DisplayAlert("Error", "User ID is empty.", "OK");
+                return;
+            }
+
+            // Validate HomeworkId is numeric
+            if (string.IsNullOrEmpty(HomeworkIdEntry.Text) || !int.TryParse(HomeworkIdEntry.Text, out int homeworkId))
+            {
+                await DisplayAlert("Error", "Please enter a valid numeric Homework ID.", "OK");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(SelectedFileURL))
+            {
+                await DisplayAlert("Error", "Please choose a file before submitting.", "OK");
+                return;
+            }
+
             var submission = new HomeworkSubmission
             {
-                HomeworkId = HomeworkIdEntry.Text,
-                StudentId = currentUserId, // Use string directly
+                HomeworkId = homeworkId,
+                StudentId = int.Parse(currentUserId), // Assuming UserId is a string, parse it to int
                 FileURL = SelectedFileURL
             };
 
@@ -45,6 +65,8 @@ namespace ClassCompassApp.Views
             if (result)
             {
                 await DisplayAlert("Success", "Homework submitted successfully!", "OK");
+                HomeworkIdEntry.Text = string.Empty;
+                SelectedFileURL = string.Empty;
             }
             else
             {

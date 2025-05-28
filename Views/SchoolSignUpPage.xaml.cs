@@ -1,58 +1,66 @@
-using ClassCompassApp.Models;
 using ClassCompassApp.Data;
+using Microsoft.Maui.Controls;
 
-namespace ClassCompassApp.Views;
-
-public partial class SchoolSignUpPage : ContentPage
+namespace ClassCompassApp.Views
 {
-    private readonly AppDbContext _dbContext;
-
-    public SchoolSignUpPage(AppDbContext dbContext)
+    public partial class SchoolSignUpPage : ContentPage
     {
-        InitializeComponent();
-        _dbContext = dbContext;
-    }
+        private readonly AppDbContext _dbContext;
 
-    private async void OnRegisterSchoolClicked(object sender, EventArgs e)
-    {
-        try
+        public SchoolSignUpPage(AppDbContext dbContext)
         {
-            if (string.IsNullOrWhiteSpace(SchoolNameEntry.Text) ||
-                string.IsNullOrWhiteSpace(SchoolIdEntry.Text) ||
-                string.IsNullOrWhiteSpace(ClassCountEntry.Text))
+            InitializeComponent();
+            _dbContext = dbContext;
+        }
+
+        private async void OnRegisterSchoolClicked(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(SchoolNameEntry.Text) ||
+                    string.IsNullOrWhiteSpace(SchoolIdEntry.Text) ||
+                    string.IsNullOrWhiteSpace(ClassCountEntry.Text))
                 {
-                await DisplayAlert("Error", "Please fill in all fields", "OK");
-                return;
+                    await DisplayAlert("Error", "Please fill in all fields", "OK");
+                    return;
+                }
+
+                // Parse SchoolId (assuming int)
+                if (!int.TryParse(SchoolIdEntry.Text, out int schoolId))
+                {
+                    await DisplayAlert("Error", "School ID must be a numeric value.", "OK");
+                    return;
+                }
+
+                // Parse NumberOfClasses
+                if (!int.TryParse(ClassCountEntry.Text, out int classCount))
+                {
+                    await DisplayAlert("Error", "Number of classes must be numeric.", "OK");
+                    return;
+                }
+
+                var school = new School
+                {
+                    Name = SchoolNameEntry.Text.Trim(),
+                    SchoolId = schoolId,
+                    NumberOfClasses = classCount,
+                };
+
+                await _dbContext.Schools.AddAsync(school);
+                await _dbContext.SaveChangesAsync();
+
+                await DisplayAlert("Success", "School registered successfully!", "OK");
+                await Shell.Current.GoToAsync("..");
             }
-
-            // Validate that ClassCountEntry.Text is a valid integer
-            if (!int.TryParse(ClassCountEntry.Text, out int classCount))
+            catch (Exception ex)
             {
-                await DisplayAlert("Error", "Number of classes must be numeric", "OK");
-                return;
+                await DisplayAlert("Error", $"Registration failed: {ex.Message}", "OK");
             }
+        }
 
-            var school = new School
-            {
-                Name = SchoolNameEntry.Text.Trim(),
-                SchoolId = SchoolIdEntry.Text.Trim(), // use as string
-                NumberOfClasses = classCount,
-            };
-
-            await _dbContext.Schools.AddAsync(school);
-            await _dbContext.SaveChangesAsync();
-
-            await DisplayAlert("Success", "School registered successfully!", "OK");
+        private async void OnBackClicked(object sender, EventArgs e)
+        {
             await Shell.Current.GoToAsync("..");
         }
-        catch (Exception ex)
-        {
-            await DisplayAlert("Error", $"Registration failed: {ex.Message}", "OK");
-        }
-    }
-
-    private async void OnBackClicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("..");
     }
 }

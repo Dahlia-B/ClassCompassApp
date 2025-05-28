@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using ClassCompassAPI.Models;
+using ClassCompassAPI.Data.Models;
 
 namespace ClassCompassAPI.Services
 {

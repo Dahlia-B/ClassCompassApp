@@ -1,0 +1,123 @@
+
+Workload(s) 'maui' are already installed.
+Checking for updated workload version.
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.android.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.ios.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.maccatalyst.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.macos.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.maui.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.tvos.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.current.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.current.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.net6.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.net7.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.net6.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.net7.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.aspire.manifest-8.0.400.msi.x64/index.json
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.android.manifest-8.0.400.msi.x64/index.json 429ms
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.macos.manifest-8.0.400.msi.x64/index.json 373ms
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.tvos.manifest-8.0.400.msi.x64/index.json 359ms
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.aspire.manifest-8.0.400.msi.x64/index.json 326ms
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.maui.manifest-8.0.400.msi.x64/index.json 364ms
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.net6.manifest-8.0.400.msi.x64/index.json 343ms
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.net7.manifest-8.0.400.msi.x64/index.json 339ms
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.net6.manifest-8.0.400.msi.x64/index.json 334ms
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.ios.manifest-8.0.400.msi.x64/index.json 382ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.maui.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.net7.manifest-8.0.400.msi.x64/index.json 373ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.android.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.current.manifest-8.0.400.msi.x64/index.json 398ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.aspire.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.current.manifest-8.0.400.msi.x64/index.json 396ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.macos.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   NotFound https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.maccatalyst.manifest-8.0.400.msi.x64/index.json 425ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.net6.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.ios.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.tvos.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.net7.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.net7.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.current.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.net6.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.current.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.maccatalyst.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.android.manifest-8.0.100.msi.x64/index.json 179ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.macos.manifest-8.0.100.msi.x64/index.json 174ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.maui.manifest-8.0.100.msi.x64/index.json 182ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.current.manifest-8.0.100.msi.x64/index.json 184ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.net6.manifest-8.0.100.msi.x64/index.json 193ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.net6.manifest-8.0.100.msi.x64/index.json 184ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.net7.manifest-8.0.100.msi.x64/index.json 187ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.ios.manifest-8.0.100.msi.x64/index.json 192ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.emscripten.current.manifest-8.0.100.msi.x64/index.json 182ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.aspire.manifest-8.0.100.msi.x64/index.json 285ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.tvos.manifest-8.0.100.msi.x64/index.json 292ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.sdk.maccatalyst.manifest-8.0.100.msi.x64/index.json 270ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.current.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.current.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.maui.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.macos.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.net6.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.ios.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.net6.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.net7.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.android.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.aspire.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.maccatalyst.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.tvos.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3/registration5-gz-semver2/microsoft.net.workload.mono.toolchain.net7.manifest-8.0.100.msi.x64/index.json 273ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.net7.manifest-8.0.100.msi.x64/index.json
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.net7.manifest-8.0.100.msi.x64/index.json 167ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.maui.manifest-8.0.100.msi.x64/index.json 173ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.aspire.manifest-8.0.100.msi.x64/index.json 167ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.macos.manifest-8.0.100.msi.x64/index.json 174ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.current.manifest-8.0.100.msi.x64/index.json 179ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.ios.manifest-8.0.100.msi.x64/index.json 176ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.current.manifest-8.0.100.msi.x64/index.json 179ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.net6.manifest-8.0.100.msi.x64/index.json 178ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.net6.manifest-8.0.100.msi.x64/index.json 169ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.net7.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.emscripten.net7.manifest-8.0.100.msi.x64.8.0.16.nupkg
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.net7.manifest-8.0.100.msi.x64/index.json 186ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.net6.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.mono.toolchain.net6.manifest-8.0.100.msi.x64.8.0.16.nupkg
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.macos.manifest-8.0.100.msi.x64/15.0.8319/microsoft.net.sdk.macos.manifest-8.0.100.msi.x64.15.0.8319.nupkg
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.ios.manifest-8.0.100.msi.x64/18.0.8319/microsoft.net.sdk.ios.manifest-8.0.100.msi.x64.18.0.8319.nupkg
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.maui.manifest-8.0.100.msi.x64/8.0.100/microsoft.net.sdk.maui.manifest-8.0.100.msi.x64.8.0.100.nupkg
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.current.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.emscripten.current.manifest-8.0.100.msi.x64.8.0.16.nupkg
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.current.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.mono.toolchain.current.manifest-8.0.100.msi.x64.8.0.16.nupkg
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.maccatalyst.manifest-8.0.100.msi.x64/index.json 201ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.net6.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.emscripten.net6.manifest-8.0.100.msi.x64.8.0.16.nupkg
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.aspire.manifest-8.0.100.msi.x64/8.2.2/microsoft.net.sdk.aspire.manifest-8.0.100.msi.x64.8.2.2.nupkg
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.net7.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.mono.toolchain.net7.manifest-8.0.100.msi.x64.8.0.16.nupkg
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.maccatalyst.manifest-8.0.100.msi.x64/18.0.8319/microsoft.net.sdk.maccatalyst.manifest-8.0.100.msi.x64.18.0.8319.nupkg
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.net7.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.emscripten.net7.manifest-8.0.100.msi.x64.8.0.16.nupkg 15ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.ios.manifest-8.0.100.msi.x64/18.0.8319/microsoft.net.sdk.ios.manifest-8.0.100.msi.x64.18.0.8319.nupkg 9ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.aspire.manifest-8.0.100.msi.x64/8.2.2/microsoft.net.sdk.aspire.manifest-8.0.100.msi.x64.8.2.2.nupkg 9ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.net7.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.mono.toolchain.net7.manifest-8.0.100.msi.x64.8.0.16.nupkg 10ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.maui.manifest-8.0.100.msi.x64/8.0.100/microsoft.net.sdk.maui.manifest-8.0.100.msi.x64.8.0.100.nupkg 12ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.net6.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.mono.toolchain.net6.manifest-8.0.100.msi.x64.8.0.16.nupkg 22ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.mono.toolchain.current.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.mono.toolchain.current.manifest-8.0.100.msi.x64.8.0.16.nupkg 22ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.current.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.emscripten.current.manifest-8.0.100.msi.x64.8.0.16.nupkg 54ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.macos.manifest-8.0.100.msi.x64/15.0.8319/microsoft.net.sdk.macos.manifest-8.0.100.msi.x64.15.0.8319.nupkg 60ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.maccatalyst.manifest-8.0.100.msi.x64/18.0.8319/microsoft.net.sdk.maccatalyst.manifest-8.0.100.msi.x64.18.0.8319.nupkg 60ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.workload.emscripten.net6.manifest-8.0.100.msi.x64/8.0.16/microsoft.net.workload.emscripten.net6.manifest-8.0.100.msi.x64.8.0.16.nupkg 63ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.android.manifest-8.0.100.msi.x64/index.json 533ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.android.manifest-8.0.100.msi.x64/34.0.154/microsoft.net.sdk.android.manifest-8.0.100.msi.x64.34.0.154.nupkg
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.tvos.manifest-8.0.100.msi.x64/index.json 580ms
+[NuGet Manager] [Info]   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.tvos.manifest-8.0.100.msi.x64/18.0.8319/microsoft.net.sdk.tvos.manifest-8.0.100.msi.x64.18.0.8319.nupkg
+Updated advertising manifest microsoft.net.workload.emscripten.net7.
+Updated advertising manifest microsoft.net.sdk.aspire.
+Updated advertising manifest microsoft.net.sdk.macos.
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.android.manifest-8.0.100.msi.x64/34.0.154/microsoft.net.sdk.android.manifest-8.0.100.msi.x64.34.0.154.nupkg 1816ms
+[NuGet Manager] [Info]   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.tvos.manifest-8.0.100.msi.x64/18.0.8319/microsoft.net.sdk.tvos.manifest-8.0.100.msi.x64.18.0.8319.nupkg 1767ms
+Updated advertising manifest microsoft.net.workload.mono.toolchain.net7.
+Updated advertising manifest microsoft.net.workload.emscripten.net6.
+Updated advertising manifest microsoft.net.sdk.maccatalyst.
+Updated advertising manifest microsoft.net.sdk.ios.
+Updated advertising manifest microsoft.net.workload.mono.toolchain.net6.
+Updated advertising manifest microsoft.net.workload.emscripten.current.
+Updated advertising manifest microsoft.net.sdk.maui.
+Updated advertising manifest microsoft.net.workload.mono.toolchain.current.
+Updated advertising manifest microsoft.net.sdk.android.
+Updated advertising manifest microsoft.net.sdk.tvos.
+
+Successfully installed workload(s) .
+

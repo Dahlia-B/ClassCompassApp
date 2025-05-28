@@ -1,4 +1,4 @@
-using ClassCompassAPI.Models;
+using ClassCompassAPI.Data.Models;
 using ClassCompassAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;

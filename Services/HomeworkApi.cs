@@ -1,8 +1,5 @@
-﻿
-using ClassCompassApp.Models;
-using ClassCompassApp.Data;
+﻿using ClassCompassApp.Data;
 using Microsoft.EntityFrameworkCore;
-
 namespace ClassCompassApp.Services;
 
 public class HomeworkApi

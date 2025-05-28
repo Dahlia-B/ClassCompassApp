@@ -1,7 +1,7 @@
-﻿using ClassCompassAPI.Models;
-using ClassCompassAPI.Services;
+﻿using ClassCompassAPI.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using ClassCompassAPI.Data.Models;
 
 namespace ClassCompassAPI.Controllers
 {
@@ -24,16 +24,6 @@ namespace ClassCompassAPI.Controllers
 
             await _homeworkService.AssignHomework(assignment);
             return Ok(new { Message = "Homework assigned successfully!" });
-        }
-
-        [HttpPost("upload")]
-        public async Task<IActionResult> UploadHomework([FromBody] HomeworkSubmission submission)
-        {
-            if (submission == null)
-                return BadRequest("Invalid submission data.");
-
-            await _homeworkService.SubmitHomework(submission);
-            return Ok(new { Message = "Homework submitted successfully!" });
         }
 
         [HttpPost("grade")]

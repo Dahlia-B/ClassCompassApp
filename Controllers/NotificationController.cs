@@ -1,5 +1,5 @@
-﻿using ClassCompassAPI.Services;
-using ClassCompassAPI.Models; // ודא ש-NotificationRequest נמצא במיקום הנכון
+﻿using ClassCompassAPI.Models;
+using ClassCompassAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 

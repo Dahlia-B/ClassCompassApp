@@ -1,12 +1,7 @@
-using System.ComponentModel.DataAnnotations;
-
-namespace ClassCompassAPI.Models
+public class Homework
 {
-    public class Homework
-    {
-        [Key] public string HomeworkId { get; set; }
-        public string ClassId { get; set; }
-        public string TeacherId { get; set; }
-        public string DueDate { get; set; }
-    }
+    public string HomeworkId { get; set; } = string.Empty;
+    public string ClassId { get; set; } = string.Empty;
+    public string TeacherId { get; set; } = string.Empty;
+    public string DueDate { get; set; } = string.Empty;
 }

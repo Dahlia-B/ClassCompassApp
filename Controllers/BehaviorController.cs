@@ -1,7 +1,8 @@
-using ClassCompassAPI.Models;
-using ClassCompassAPI.Services;
+using ClassCompassAPI.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using System.Linq;
+using ClassCompassAPI.Data.Models;
 
 namespace ClassCompassAPI.Controllers
 {

@@ -1,7 +1,7 @@
-﻿using ClassCompassAPI.Services;
+﻿using ClassCompassAPI.Data.Models;
+using ClassCompassAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity.Data;
 
 namespace ClassCompassAPI.Controllers
 {
@@ -9,27 +9,27 @@ namespace ClassCompassAPI.Controllers
     [Route("api/[controller]")]
     public class AuthenticationController : ControllerBase
     {
-        private readonly FirebaseAuthService _firebaseAuthService;
+        private readonly SupabaseAuthService _supabaseAuthService;
 
-        public AuthenticationController(FirebaseAuthService firebaseAuthService)
+        public AuthenticationController(SupabaseAuthService supabaseAuthService)
         {
-            _firebaseAuthService = firebaseAuthService;
+            _supabaseAuthService = supabaseAuthService;
         }
 
         // POST: api/authentication/login
         [HttpPost("login")]
         public async Task<IActionResult> SecureLogin([FromBody] LoginRequest request)
         {
-            if (string.IsNullOrWhiteSpace(request.Email) || string.IsNullOrWhiteSpace(request.Password))
+            if (string.IsNullOrWhiteSpace(request.Name) || string.IsNullOrWhiteSpace(request.Password))
             {
-                return BadRequest("Email and password are required.");
+                return BadRequest("Name and password are required.");
             }
 
-            var user = await _firebaseAuthService.AuthenticateUser(request.Email, request.Password);
+            var user = await _supabaseAuthService.AuthenticateUser(request.Name, request.Password);
 
             if (user != null)
             {
-                return Ok(user); // ניתן להחזיר כאן טוקן JWT אם תוסיף אותו ב־FirebaseAuthService
+                return Ok(user); // Return user info or token as needed
             }
 
             return Unauthorized(new { Message = "Invalid credentials." });

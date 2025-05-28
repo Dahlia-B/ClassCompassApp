@@ -1,10 +1,12 @@
-﻿using ClassCompassAPI.Models;
+﻿using System.Threading.Tasks;
+using System.Collections.Generic;
+using ClassCompassAPI.Data.Models;
 
 namespace ClassCompassAPI.Interfaces
 {
     public interface IBehaviorService
     {
-        Task<IEnumerable<BehaviorRecord>> GetBehaviorRecordsAsync(int studentId);
-        Task<BehaviorRecord> CreateBehaviorRecordAsync(BehaviorRecord record);
+        Task RecordBehavior(string studentId, BehaviorRecord record);
+        Task<IEnumerable<BehaviorRecord>> GetBehaviorRecords(string studentId);
     }
 }

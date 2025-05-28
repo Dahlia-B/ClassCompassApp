@@ -11,25 +11,11 @@ public partial class LoginPage : ContentPage
 
     private async void OnTeacherLoginClicked(object sender, EventArgs e)
     {
-        // Get the service from DI container
-        var teacherLoginPage = Application.Current?.Handler?.MauiContext?.Services
-            .GetService<TeacherLoginPage>();
-
-        if (teacherLoginPage != null)
-        {
-            await Navigation.PushAsync(teacherLoginPage);
-        }
+        await Shell.Current.GoToAsync(nameof(TeacherLoginPage));
     }
 
     private async void OnStudentLoginClicked(object sender, EventArgs e)
     {
-        // Get the service from DI container
-        var studentLoginPage = Application.Current?.Handler?.MauiContext?.Services
-            .GetService<StudentLoginPage>();
-
-        if (studentLoginPage != null)
-        {
-            await Navigation.PushAsync(studentLoginPage);
-        }
+        await Shell.Current.GoToAsync(nameof(StudentLoginPage));
     }
 }

@@ -1,44 +1,20 @@
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.DependencyInjection;
 
-public class Startup
+namespace ClassCompassAPI
 {
-    public void ConfigureServices(IServiceCollection services)
+    public class Program
     {
-        services.AddControllers();
-
-        // Add authentication and authorization here (e.g., JWT, Firebase, etc.)
-        services.AddAuthentication(/* your auth scheme here */);
-        services.AddAuthorization();
-
-        // Add other services like HomeworkService here
-        // services.AddScoped<IHomeworkService, HomeworkService>();
-    }
-
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-    {
-        if (env.IsDevelopment())
+        public static void Main(string[] args)
         {
-            app.UseDeveloperExceptionPage();
-        }
-        else
-        {
-            app.UseExceptionHandler("/Home/Error");
-            app.UseHsts();
+            CreateHostBuilder(args).Build().Run();
         }
 
-        app.UseHttpsRedirection();
-
-        app.UseRouting();
-
-        app.UseAuthentication();
-        app.UseAuthorization();
-
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapControllers();
-        });
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }

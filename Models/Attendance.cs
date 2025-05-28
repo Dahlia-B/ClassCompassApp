@@ -1,4 +1,4 @@
-namespace ClassCompassAPI.Models
+namespace ClassCompassAPI.Data.Models
 {
     public class Attendance
     {
